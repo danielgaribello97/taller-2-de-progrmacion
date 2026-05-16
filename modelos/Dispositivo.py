@@ -6,10 +6,7 @@ class Dispositivo:
 
     def validar_acceso(self, empleado):
         """
-        Método base que será sobreescrito por las clases hijas.
-        Define la lógica general de validación.
+        Método base diseñado para ser sobreescrito por las clases hijas (Polimorfismo).
         """
         print(f"Iniciando validación en {self.nombre_dispositivo} ({self.ubicacion})...")
-        # Por defecto, una validación base no deja entrar a nadie hasta que
-        # las clases hijas definan su lógica (Huella, PIN, etc.)
         return False
